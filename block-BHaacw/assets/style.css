@@ -151,6 +151,7 @@ body {
 }
 .item5 h2 {
   margin-top: -35px;
+  width: 610px;
   background-color: red;
   display: flex;
   align-items: start;
@@ -161,6 +162,7 @@ body {
   padding: 0;
 }
 .item3 a {
+  width: 610px;
   background-color: #fc2e1b;
   color: white;
   margin-bottom: -35px;
