@@ -93,8 +93,7 @@ body {
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   padding: 10px;
   padding-top: 0;
   border: 3px solid #0095be;
@@ -166,4 +165,13 @@ body {
   background-color: #fc2e1b;
   color: white;
   margin-bottom: -35px;
+}
+
+@media screen and (max-width: 768px) {
+  .container2 {
+    display: block;
+  }
+  .container2 .content {
+    margin-bottom: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */
