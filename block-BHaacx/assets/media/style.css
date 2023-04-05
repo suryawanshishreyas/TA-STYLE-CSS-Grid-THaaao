@@ -1,0 +1,511 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "myFont";
+  src: url("E:/altcampus/TA-STYLE-CSS-Grid-THaaao/block-BHaacx/fonts/NunitoSans-Regular.ttf");
+}
+body {
+  font-family: "myFont";
+}
+
+.container {
+  margin: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+  grid-template-rows: 1.5fr 0.5fr 0.5fr 0.5fr 0.75fr 0.5fr;
+  grid-template-areas: "1 2 " "3 4" "5 6" "7 8" "9 10" "11 12";
+  border: 1px solid black;
+}
+
+.content {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.content5, .content6 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.content5 div, .content6 div {
+  border: 1px solid blue;
+}
+
+.h2-1 {
+  font-size: 24px;
+  z-index: 2;
+  position: absolute;
+  left: 300px;
+  top: 50px;
+  font-weight: 700;
+}
+
+.content1 {
+  border: 0px solid black;
+  grid-area: 1;
+  overflow: hidden;
+}
+.content1 .home-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  z-index: 1;
+}
+
+.content2 {
+  background-color: #f5e3d7;
+  overflow: hidden;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 20px;
+}
+.navigation .nav:hover {
+  color: #efc282;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 100px 50px;
+  overflow: hidden;
+}
+.main-content span {
+  font-size: 42px;
+  font-weight: 700;
+}
+.main-content .h1-1 {
+  font-size: 42px;
+  font-weight: 500;
+  text-align: start;
+  padding: 10px 0;
+}
+.main-content p {
+  text-align: start;
+  line-height: 2;
+  opacity: 0.6;
+}
+.main-content h2 {
+  font-size: 10px;
+  opacity: 0.6;
+}
+.main-content .button-1 {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 3px solid black;
+  margin-top: 30px;
+  background-color: #f5e3d7;
+}
+
+.content3 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+  background-color: #ffffff;
+  overflow: hidden;
+  padding: 30px;
+}
+.content3 p {
+  overflow: hidden;
+  text-align: start;
+  padding: 5px;
+}
+
+.h1-2 {
+  font-size: 32px;
+  padding: 5px;
+}
+
+.content4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+.content4 div {
+  overflow: hidden;
+}
+.content4 .about-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scale(3, 1);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.skills {
+  background-color: #ecaf4e;
+  padding: 20px;
+}
+.skills ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 50px;
+  font-size: 14px;
+}
+
+.h1-3 {
+  font-size: 28px;
+  color: white;
+  text-align: start;
+}
+
+.skill-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3px 0;
+}
+.skill-flex h2, .skill-flex span {
+  font-size: 10px;
+}
+
+.progress1 {
+  margin: 3px 0;
+  width: 450px;
+  height: 3px;
+  background-image: linear-gradient(to right, black 0%, black 90%, white 90%, white 100%);
+}
+
+.progress2 {
+  margin: 3px 0;
+  width: 450px;
+  height: 3px;
+  background-image: linear-gradient(to right, black 0%, black 70%, white 70%, white 100%);
+}
+
+.progress3 {
+  margin: 3px 0;
+  width: 450px;
+  height: 3px;
+  background-image: linear-gradient(to right, black 0%, black 80%, white 80%, white 100%);
+}
+
+.content6 {
+  overflow: hidden;
+}
+
+.laptop, .plane {
+  background-color: #ecaf4e;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+  color: white;
+}
+.laptop h2, .plane h2 {
+  font-size: 20px;
+}
+.laptop p, .plane p {
+  padding: 10px;
+}
+
+.fa {
+  display: block;
+  font-size: 30px;
+  color: white;
+  margin: 5px auto;
+}
+
+.app {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+  color: white;
+}
+.app h2 {
+  font-size: 20px;
+}
+.app p {
+  padding: 10px;
+}
+
+.code {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+  color: black;
+}
+.code h2 {
+  font-size: 20px;
+}
+.code .fa-code {
+  color: black;
+}
+.code p {
+  padding: 10px;
+}
+
+.content7 {
+  overflow: hidden;
+}
+.content7 .exp {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: scale(1);
+}
+
+.content8 {
+  background-color: #fc683e;
+  padding: 20px;
+}
+.content8 .h1-4 {
+  font-size: 40px;
+  color: white;
+  text-align: start;
+}
+.content8 h3 {
+  text-align: start;
+  font-size: 20px;
+  color: white;
+}
+
+.content8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profession-1 {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: start;
+}
+.profession-1 .title-1 {
+  padding: 10px;
+}
+.profession-1 h2 {
+  text-align: start;
+  font-size: 24px;
+  color: white;
+  text-align: start;
+}
+.profession-1 p {
+  color: white;
+  padding: 2px;
+  text-align: start;
+}
+.profession-1 .fa {
+  font-size: 40px;
+  vertical-align: center;
+}
+
+.profession-2 {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: start;
+}
+.profession-2 .title-2 {
+  padding: 10px;
+}
+.profession-2 h2 {
+  text-align: start;
+  font-size: 24px;
+  color: white;
+  text-align: start;
+}
+.profession-2 p {
+  color: white;
+  padding: 5px;
+  text-align: start;
+}
+.profession-2 .fa {
+  font-size: 40px;
+  vertical-align: center;
+}
+
+.flex-3, .flex-4 {
+  display: flex;
+  flex-direction: row;
+}
+.flex-3 h4, .flex-4 h4 {
+  padding: 0 50px;
+  font-weight: 700;
+  color: #ecaf4e;
+}
+
+.content9 {
+  background-color: #ecaf4e;
+  padding: 20px;
+}
+.content9 .h1-5 {
+  position: relative;
+  bottom: 30px;
+  font-size: 40px;
+  color: white;
+  text-align: start;
+}
+.content9 h4 {
+  color: goldenrod;
+}
+.content9 h3 {
+  text-align: start;
+  font-size: 20px;
+  color: white;
+  position: relative;
+  bottom: 30px;
+}
+
+.content9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profession-3 {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: start;
+}
+.profession-3 .title-3 {
+  padding: 10px;
+}
+.profession-3 h2 {
+  text-align: start;
+  font-size: 24px;
+  color: white;
+  text-align: start;
+}
+.profession-3 p {
+  color: white;
+  padding: 2px;
+  text-align: start;
+}
+.profession-3 .fa {
+  font-size: 40px;
+  vertical-align: center;
+}
+
+.profession-4 {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: start;
+}
+.profession-4 .title-4 {
+  padding: 10px;
+}
+.profession-4 h2 {
+  text-align: start;
+  font-size: 24px;
+  color: white;
+  text-align: start;
+}
+.profession-4 p {
+  color: white;
+  padding: 5px;
+  text-align: start;
+}
+.profession-4 .fa {
+  display: flex;
+  font-size: 40px;
+  align-items: center;
+}
+
+.symbol3, .symbol4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+}
+
+.flex-4, .flex-5 {
+  display: flex;
+  flex-direction: row;
+}
+.flex-4 h4, .flex-5 h4 {
+  padding: 0 70px;
+  font-weight: 700;
+  color: goldenrod;
+}
+
+.flex-5 {
+  justify-content: space-between;
+}
+
+.content10 {
+  overflow: hidden;
+}
+
+.edu {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */
